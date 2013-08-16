@@ -1,0 +1,5 @@
+<h1>Editing <%= @trainer.name %>'s <%= @pokemon.name %>.</h1>
+
+<%= render :partial => 'form' %>
+
+<%= link_to 'Back', trainer_path(@trainer) %>

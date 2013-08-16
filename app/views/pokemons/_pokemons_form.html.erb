@@ -1,0 +1,37 @@
+<%= form_for([@trainer, @trainer.pokemons.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :hp %><br />
+    <%= f.number_field :hp %>
+  </div>
+  <div class="field">
+    <%= f.label :totalhp %><br />
+    <%= f.number_field :totalhp %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br />
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :type1 %><br />
+    <%= f.text_field :type1 %>
+  </div>
+  <div class="field">
+    <%= f.label :type2 %><br />
+    <%= f.text_field :type2 %>
+  </div>
+  <div class="field">
+    <%= f.label :move1 %><br />
+    <%= f.text_field :move1 %>
+  </div>
+  <div class="field">
+    <%= f.label :move2 %><br />
+    <%= f.text_field :move2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  level: 1
+  type1: MyString
+  type2: MyString
+  move1: MyString
+  move2: MyString
+  hp: 1
+  totalhp: 1
+  trainer: 
+
+two:
+  name: MyString
+  level: 1
+  type1: MyString
+  type2: MyString
+  move1: MyString
+  move2: MyString
+  hp: 1
+  totalhp: 1
+  trainer: 

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @trainer.name %>
+</p>
+
+<p>
+  <b>Money:</b>
+  <%= @trainer.money %>
+</p>
+
+<p>
+  <b>Active Pokemon:</b> 
+  <span class="active-pokemon">
+	<% if @trainer.active_pokemon_id != nil %>
+      <%= Pokemon.find(@trainer.active_pokemon_id).name %>
+	<% else %>
+      Active Pokemon not yet set.
+	<% end %>
+  </span>
+</p>
+
+<p>
+  <b><%= @trainer.name %>'s Party:</b><br />
+  <% @trainer.pokemons.each do |pokemon| %>
+    <%= pokemon.name %><br />
+    Level: <%= pokemon.level %>
+    HP: <%= pokemon.hp %>/<%= pokemon.totalhp %><br />
+    <%= link_to 'Set as active', 
+      { 
+        :controller     => 'trainers', 
+        :action  		=> 'set_active',
+        :trainer_id 	=> @trainer.id,
+        :pokemon_id		=> pokemon.id
+      }, 
+        :method			=> 'post',
+	    :remote 		=> true,
+	    :class  		=> 'active-pokemon-bind' %>
+    <%= link_to "Edit Pokemon", edit_trainer_pokemon_path(@trainer, pokemon) %><br />
+  <% end %>
+</p>
+
+<b>Add Pokemon to Party</b>
+<%= render 'pokemons/pokemons_form' %>
+
+
+<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %>
+
+
+<script type="text/javascript">
+  
+</script>

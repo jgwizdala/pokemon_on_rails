@@ -1,0 +1,14 @@
+
+
+$selection-color: #ADD8C7;
+
+::selection {
+	background: $selection-color;
+}
+::-moz-selection {
+	background: $selection-color;
+}
+
+::-webkit-selection {
+	background: $selection-color;
+}

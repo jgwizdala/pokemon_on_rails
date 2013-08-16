@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing trainers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Money</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @trainers.each do |trainer| %>
+  <tr>
+    <td><%= trainer.name %></td>
+    <td><%= trainer.money %></td>
+    <td><%= link_to 'Show', trainer %></td>
+    <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+    <td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <tr>
+    <td>
+      Pokemon: <br />
+      <%= render trainer.pokemons %>
+    </td>
+  </tr>
+  
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Trainer', new_trainer_path %>

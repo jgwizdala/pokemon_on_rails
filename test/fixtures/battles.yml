@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  trainer_id: 
+  enemy_id: 
+  turns: 
+  complete: MyString
+
+two:
+  trainer_id: 
+  enemy_id: 
+  turns: 
+  complete: MyString

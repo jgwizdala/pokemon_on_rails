@@ -1,0 +1,68 @@
+
+@mixin pointer {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+@mixin border-radius ( $value: 3px ) {
+  -webkit-border-radius: $value;
+     -moz-border-radius: $value;
+          border-radius: $value;
+ 
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+@mixin border-radius-corners ( $top: 3px, $right: 3px, $bottom: 3px, $left: 3px ) {
+  -webkit-border-radius: $top $right $bottom $left;
+     -moz-border-radius: $top $right $bottom $left;
+          border-radius: $top $right $bottom $left;
+ 
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+@mixin hide-text {
+  font: 0/0 a; 
+  text-shadow: none;
+  color: transparent;
+}
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+@mixin letterpress-inverse($opacity){
+    text-shadow:black($opacity) 0 1px 1px;
+}
+
+@mixin opacity ( $value: 0.5 ) {
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" $value * 100 ")";
+  filter: alpha(opacity= $value * 100 );
+  zoom: 1;
+}
+
+@mixin box-shadow( $horiz : .5em, $vert : .5em, $blur : 0px, $spread : 0px, $color : #000000 ){
+    -webkit-box-shadow: $horiz $vert $blur $spread $color;
+    -moz-box-shadow: $horiz $vert $blur $spread $color;
+    box-shadow: $horiz $vert $blur $spread $color;
+}
+
+@mixin gradient($from, $to) {
+    background: $to;
+    
+    background:    -moz-linear-gradient(top, $from 0%, $to 100%);
+    background:        -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background:      -o-linear-gradient(top, $from 0%,$to 100%);
+    background:     -ms-linear-gradient(top, $from 0%,$to 100%);
+    background:         linear-gradient(to bottom, $from 0%,$to 100%);
+}

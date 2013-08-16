@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= @trainer.name %><br />
+  <%= @trainer_active_pokemon.name %> 
+</p>
+
+<p>
+  <%= @enemy.name %><br />
+  <%= @enemy_active_pokemon.name %>
+</p>
+
+
+<p>
+  <b>Rounds:</b>
+  <%= @battle.turns %>
+</p>
+
+
+<%= link_to 'Edit', edit_battle_path(@battle) %> |
+<%= link_to 'Back', battles_path %>
