@@ -2,7 +2,7 @@
 *.rbc
 .bundle
 .config
-config/database.ymi
+config/database.yml
 coverage
 InstalledFiles
 lib/bundler/man
