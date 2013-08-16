@@ -1,4 +1,4 @@
 pokemon_on_rails
 ================
 
-A mostly amusing attempt at creating a Pokemon game for Ruby on Rails. 
+A just for fun attempt at creating an AJAX Pokemon game using Ruby on Rails
