@@ -1,0 +1,35 @@
+<h1>Listing pokemon_stats</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Attack</th>
+    <th>Special attack</th>
+    <th>Defense</th>
+    <th>Special defense</th>
+    <th>Speed</th>
+    <th>Hp</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pokemon_stats.each do |pokemon_stat| %>
+  <tr>
+    <td><%= pokemon_stat.name %></td>
+    <td><%= pokemon_stat.attack %></td>
+    <td><%= pokemon_stat.special_attack %></td>
+    <td><%= pokemon_stat.defense %></td>
+    <td><%= pokemon_stat.special_defense %></td>
+    <td><%= pokemon_stat.speed %></td>
+    <td><%= pokemon_stat.hp %></td>
+    <td><%= link_to 'Show', pokemon_stat %></td>
+    <td><%= link_to 'Edit', edit_pokemon_stat_path(pokemon_stat) %></td>
+    <td><%= link_to 'Destroy', pokemon_stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pokemon stat', new_pokemon_stat_path %>

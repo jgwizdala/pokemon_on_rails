@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  power: 1
+  accuracy: 1
+  effect: MyString
+
+two:
+  name: MyString
+  power: 1
+  accuracy: 1
+  effect: MyString
