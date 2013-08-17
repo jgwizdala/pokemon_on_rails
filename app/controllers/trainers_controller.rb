@@ -77,8 +77,8 @@ class TrainersController < ApplicationController
     
     respond_to do |format|
       @trainer.update_attribute(:active_pokemon_id, @pokemon.id)
-	  format.js   { render :layout => false }
-	end
+      format.js   { render :layout => false }
+    end
   end
 
   # DELETE /trainers/1

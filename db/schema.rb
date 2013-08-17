@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130809020655) do
+ActiveRecord::Schema.define(:version => 20130817001541) do
 
   create_table "battles", :force => true do |t|
     t.integer  "trainer_id"
@@ -20,6 +20,30 @@ ActiveRecord::Schema.define(:version => 20130809020655) do
     t.string   "complete"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "moves", :force => true do |t|
+    t.string   "name"
+    t.integer  "pp"
+    t.integer  "power"
+    t.integer  "accuracy"
+    t.integer  "critical"
+    t.string   "effect"
+    t.string   "move_type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pokemon_stats", :force => true do |t|
+    t.string   "name"
+    t.integer  "attack"
+    t.integer  "special_attack"
+    t.integer  "defense"
+    t.integer  "special_defense"
+    t.integer  "speed"
+    t.integer  "hp"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "pokemons", :force => true do |t|

@@ -4,8 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Level</th>
-    <th>Remaining HP</th>
-    <th>Total HP</th>
+    <th>HP</th>
     <th>Type1</th>
     <th>Type2</th>
     <th>Move1</th>
@@ -18,9 +17,8 @@
 <% @pokemons.each do |pokemon| %>
   <tr>
     <td><%= pokemon.name %></td>
-    <td><%= pokemon.hp %></td>
-    <td><%= pokemon.totalhp %></td>
     <td><%= pokemon.level %></td>
+    <td><%= pokemon.hp %></td>
     <td><%= pokemon.type1 %></td>
     <td><%= pokemon.type2 %></td>
     <td><%= pokemon.move1 %></td>

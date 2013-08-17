@@ -26,7 +26,7 @@
   <% @trainer.pokemons.each do |pokemon| %>
     <%= pokemon.name %><br />
     Level: <%= pokemon.level %>
-    HP: <%= pokemon.hp %>/<%= pokemon.totalhp %><br />
+    HP: <%= pokemon.hp %><br />
     <%= link_to 'Set as active', 
       { 
         :controller     => 'trainers', 

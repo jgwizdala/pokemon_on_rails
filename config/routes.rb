@@ -1,4 +1,10 @@
 App::Application.routes.draw do
+  resources :pokemon_stats
+
+
+  resources :moves
+
+
   resources :battles
 
 

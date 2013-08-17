@@ -7,8 +7,9 @@ class CreatePokemons < ActiveRecord::Migration
       t.string :type2
       t.string :move1
       t.string :move2
+      t.string :move1_pp
+      t.string :move2_pp
       t.integer :hp
-      t.integer :totalhp
       t.references :trainer
 
       t.timestamps

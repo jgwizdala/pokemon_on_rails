@@ -2,7 +2,9 @@
 
 <p>
   <%= @trainer.name %><br />
-  <%= @trainer_active_pokemon.name %> 
+  <%= @trainer_active_pokemon.name %><br />
+  <%= Move.find_by_name(@trainer_active_pokemon.move1).name %>, 
+  <%= Move.find_by_name(@trainer_active_pokemon.move1).power %> power
 </p>
 
 <p>

@@ -85,4 +85,17 @@ class BattlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def attack
+    @battle = Battle.find(params[:battle_id])
+    @move = Moves.find()
+    @pokemon = @trainer.pokemons.find(params[:pokemon_id])
+    
+    @active_pokemon = @pokemon.name
+    
+    respond_to do |format|
+      @trainer.update_attribute(:active_pokemon_id, @pokemon.id)
+      format.js   { render :layout => false }
+    end
+  end
 end
