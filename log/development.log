@@ -8961,3 +8961,673 @@ Processing by TrainersController#show as JS
   Rendered trainers/show.html.erb within layouts/application (22.0ms)
   Rendered common/_fonts.html.erb (0.0ms)
 Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/battles/1" for 127.0.0.1 at 2013-08-16 20:35:42 -0400
+Creating scope :page. Overwriting existing method Battle.page.
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattle Load (0.1ms)[0m  [1mSELECT `battles`.* FROM `battles` WHERE `battles`.`id` = 1 LIMIT 1[0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 1 LIMIT 1
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.5ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1 AND `pokemons`.`id` = 1 LIMIT 1
+  [1m[36mPokemon Load (0.4ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2 AND `pokemons`.`id` = 2 LIMIT 1[0m
+Creating scope :page. Overwriting existing method Move.page.
+  [1m[35mMove Load (0.1ms)[0m  SELECT `moves`.* FROM `moves` WHERE `moves`.`name` = 'Tackle' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `moves`.* FROM `moves` WHERE `moves`.`name` = 'Tackle' LIMIT 1[0m
+  Rendered battles/show.html.erb within layouts/application (17.3ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 20.8ms | ActiveRecord: 4.4ms)
+
+
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /clear.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /utils/utils.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /global.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (0ms)
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/battles/1?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376699743124" for 127.0.0.1 at 2013-08-16 20:35:43 -0400
+Processing by BattlesController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376699743124", "id"=>"1"}
+  [1m[35mBattle Load (0.3ms)[0m  SELECT `battles`.* FROM `battles` WHERE `battles`.`id` = 1 LIMIT 1
+  [1m[36mTrainer Load (0.2ms)[0m  [1mSELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 1 LIMIT 1[0m
+  [1m[35mTrainer Load (0.2ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1 AND `pokemons`.`id` = 1 LIMIT 1[0m
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2 AND `pokemons`.`id` = 2 LIMIT 1
+  [1m[36mMove Load (0.2ms)[0m  [1mSELECT `moves`.* FROM `moves` WHERE `moves`.`name` = 'Tackle' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `moves`.* FROM `moves` WHERE `moves`.`name` = 'Tackle' LIMIT 1
+  Rendered battles/show.html.erb within layouts/application (2.8ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 12.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` [0m
+  [1m[35mPokemon Load (2.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemon.html.erb (0.1ms)
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (52.1ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /clear.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /utils/utils.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /global.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trainers?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700104495" for 127.0.0.1 at 2013-08-16 20:41:44 -0400
+Processing by TrainersController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700104495"}
+  [1m[35mTrainer Load (2.1ms)[0m  SELECT `trainers`.* FROM `trainers` 
+  [1m[36mPokemon Load (2.5ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1[0m
+  Rendered pokemons/_pokemon.html.erb (0.1ms)
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (7.0ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/trainers/1?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700106342" for 127.0.0.1 at 2013-08-16 20:41:46 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700106342", "id"=>"1"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 1 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 1 LIMIT 1
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1[0m
+  Rendered pokemons/_pokemons_form.html.erb (3.8ms)
+  Rendered trainers/show.html.erb within layouts/application (10.1ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/trainers/1/pokemons/1/edit?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700107009" for 127.0.0.1 at 2013-08-16 20:41:47 -0400
+Processing by PokemonsController#edit as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700107009", "trainer_id"=>"1", "id"=>"1"}
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 1 LIMIT 1
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 1 LIMIT 1[0m
+  Rendered pokemons/_form.html.erb (3.6ms)
+  Rendered pokemons/edit.html.erb within layouts/application (4.2ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers/1?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700107367" for 127.0.0.1 at 2013-08-16 20:41:47 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700107367", "id"=>"1"}
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 1 LIMIT 1
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 1 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemons_form.html.erb (3.5ms)
+  Rendered trainers/show.html.erb within layouts/application (6.2ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700107718" for 127.0.0.1 at 2013-08-16 20:41:47 -0400
+Processing by TrainersController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700107718"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` [0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (3.4ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers/2?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700108312" for 127.0.0.1 at 2013-08-16 20:41:48 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700108312", "id"=>"2"}
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2
+  Rendered pokemons/_pokemons_form.html.erb (3.5ms)
+  Rendered trainers/show.html.erb within layouts/application (6.7ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trainers?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700108860" for 127.0.0.1 at 2013-08-16 20:41:48 -0400
+Processing by TrainersController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700108860"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` [0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (4.2ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trainers/2?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700109165" for 127.0.0.1 at 2013-08-16 20:41:49 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700109165", "id"=>"2"}
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.6ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2
+  Rendered pokemons/_pokemons_form.html.erb (3.7ms)
+  Rendered trainers/show.html.erb within layouts/application (7.3ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trainers/2/pokemons/2/edit?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700109619" for 127.0.0.1 at 2013-08-16 20:41:49 -0400
+Processing by PokemonsController#edit as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700109619", "trainer_id"=>"2", "id"=>"2"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1
+  Rendered pokemons/_form.html.erb (4.8ms)
+  Rendered pokemons/edit.html.erb within layouts/application (5.6ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers/2?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700110534" for 127.0.0.1 at 2013-08-16 20:41:50 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700110534", "id"=>"2"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemons_form.html.erb (3.5ms)
+  Rendered trainers/show.html.erb within layouts/application (6.2ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers/2/pokemons/2/edit?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700115402" for 127.0.0.1 at 2013-08-16 20:41:55 -0400
+Processing by PokemonsController#edit as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700115402", "trainer_id"=>"2", "id"=>"2"}
+  [1m[35mTrainer Load (0.4ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  Rendered pokemons/_form.html.erb (3.6ms)
+  Rendered pokemons/edit.html.erb within layouts/application (4.3ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/trainers/2?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700115875" for 127.0.0.1 at 2013-08-16 20:41:55 -0400
+Processing by TrainersController#show as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700115875", "id"=>"2"}
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT `trainers`.* FROM `trainers` WHERE `trainers`.`id` = 2 LIMIT 1
+  [1m[36mPokemon Load (0.8ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2
+  Rendered pokemons/_pokemons_form.html.erb (11.8ms)
+  Rendered trainers/show.html.erb within layouts/application (16.2ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` [0m
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (3.4ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+
+
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /utils/utils.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /global.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (0ms)
+Served asset /clear.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/trainers?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700117596" for 127.0.0.1 at 2013-08-16 20:41:57 -0400
+Creating scope :page. Overwriting existing method Trainer.page.
+Processing by TrainersController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700117596"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT `trainers`.* FROM `trainers` [0m
+Creating scope :page. Overwriting existing method Pokemon.page.
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 1
+  Rendered pokemons/_pokemon.html.erb (0.4ms)
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`trainer_id` = 2[0m
+  Rendered pokemons/_pokemon.html.erb (0.0ms)
+  Rendered trainers/index.html.erb within layouts/application (33.0ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 154ms (Views: 95.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-08-16 20:44:38 -0400
+Served asset /rails.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-08-16 20:50:15 -0400
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-08-16 20:50:46 -0400
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /clear.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /utils/utils.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /global.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (2ms)
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700666632" for 127.0.0.1 at 2013-08-16 20:51:06 -0400
+Processing by HomeController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700666632"}
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /clear.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /global.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (0ms)
+Served asset /utils/utils.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:28 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (3ms)
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700749012" for 127.0.0.1 at 2013-08-16 20:52:29 -0400
+Processing by HomeController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700749012"}
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moves" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Creating scope :page. Overwriting existing method Move.page.
+Processing by MovesController#index as HTML
+  [1m[36mMove Load (0.2ms)[0m  [1mSELECT `moves`.* FROM `moves` [0m
+  Rendered moves/index.html.erb within layouts/application (2.7ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 8.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /clear.css - 304 Not Modified (1ms)
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /utils/utils.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /global.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+Served asset /gs/TweenMax.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/moves?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700764269" for 127.0.0.1 at 2013-08-16 20:52:44 -0400
+Creating scope :page. Overwriting existing method Move.page.
+Processing by MovesController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700764269"}
+  [1m[36mMove Load (0.1ms)[0m  [1mSELECT `moves`.* FROM `moves` [0m
+  Rendered moves/index.html.erb within layouts/application (47.8ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 93ms (Views: 73.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700766151" for 127.0.0.1 at 2013-08-16 20:52:46 -0400
+Processing by HomeController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700766151"}
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (6ms)
+Served asset /clear.css - 304 Not Modified (0ms)
+
+
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /gs/TweenMax.min.js - 304 Not Modified (0ms)
+Served asset /utils/utils.js - 304 Not Modified (0ms)
+Served asset /global.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700808750" for 127.0.0.1 at 2013-08-16 20:53:28 -0400
+Processing by HomeController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700808750"}
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered common/_fonts.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clear.css?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (1ms)
+Served asset /application.css - 304 Not Modified (2ms)
+Served asset /clear.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utils/utils.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/global.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gs/TweenMax.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Served asset /utils/utils.js - 304 Not Modified (1ms)
+Served asset /global.js - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+Served asset /gs/TweenMax.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gs/plugins/CSSPlugin.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Served asset /gs/plugins/CSSPlugin.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+Served asset /jquery-ui-1.10.2.custom.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/?screen_width=1920&screen_height=1200&browser_width=1610&browser_height=1082&_=1376700858791" for 127.0.0.1 at 2013-08-16 20:54:18 -0400
+Processing by HomeController#index as JS
+  Parameters: {"screen_width"=>"1920", "screen_height"=>"1200", "browser_width"=>"1610", "browser_height"=>"1082", "_"=>"1376700858791"}
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+  Rendered common/_fonts.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)

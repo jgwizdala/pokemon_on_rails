@@ -1,11 +1,13 @@
 App::Application.routes.draw do
+  
+  root :to => "home#index"
+
   resources :pokemon_stats
-
-
   resources :moves
-
-
   resources :battles
+  resources :home
+
+
 
 
   resources :trainers do
